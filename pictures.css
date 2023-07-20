@@ -58,10 +58,12 @@ p{
 
 .pictures {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px; /* optional, for space between images */
-}
-.pictures img {
-    width: 100%; /* make sure images resize to fit their grid item */
-    height: auto; /* maintain aspect ratio */
-}
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; 
+  }
+  
+  .pictures img {
+    width: 100%;
+    height: auto;
+  }
+  
